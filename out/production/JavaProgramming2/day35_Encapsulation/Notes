@@ -1,0 +1,19 @@
+Encapsulation summary in 8 questions
+
+1) What is Encapsulation?
+Encapsulation is a data storage method used to protect sensitive data.
+2) How do we store data?
+We store data using private access modifier.
+3) Can we access the stored data from other classes?
+We can reach it using getter and setter methods.
+4) What does the getter() method do?
+It allows us to read the stored data.
+5) What does the setter() method do?
+It allows us to update the stored data through the object.
+6) What is an immutable class?
+If we just create the getter method in an encapsulated class, we can read the data, but
+we cannot change. Such classes are called immutable classes.
+7) What is the naming convention for setter() methods?
+Names for all data types begin with "set".
+8) What is the naming convention for getter() methods?
+It starts with "is" for the Boolean data type and "get" for the other data types.

@@ -1,0 +1,9 @@
+
+
+  How do we create String?
+      - Literal
+      - new Keyword
+
+      Java compiler checks the String pool, and if there is already a string in the pool, Java does not create a new one
+              str1: reference to our String object
+              str2: reference to our String object

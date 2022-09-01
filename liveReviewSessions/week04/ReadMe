@@ -1,0 +1,13 @@
+
+
+
+   1. If Else If Else
+
+   2. Switch
+      a. It can only perform == (equals) comparsion.  > , <
+      b. byte,char, int, String, short variables type
+      c. data type of case and condition should be same
+      d. use BREAK, to get out of switch Block
+
+
+

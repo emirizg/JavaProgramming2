@@ -1,0 +1,9 @@
+
+Exception:
+    checked & unchecked
+        - The exception will always crash our program, we need to handle them
+        - in order to prevent them we have different ways
+            1. Try-Catch block
+            2. Throws keyword (it has to be given within the method signature)
+
+

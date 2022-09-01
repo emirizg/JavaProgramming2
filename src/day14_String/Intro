@@ -1,0 +1,66 @@
+
+
+ 1. Object. 2 ways we can create objects:
+                1. String literal:     String str1 = "Cydeo";
+                                       String s ="Cydeo";    str1==s ---> true
+                                  1- all the string literalls wil be stored in the string pool;
+                                                    all the string literals will be stored in string pool
+
+                                  2- by new keyword: String str2 = new String("Cydeo"); str2==str3 --> false
+                                                     String str3 = new String("Cydeo"); str3==str2 --> false
+
+                                  new different object will be created in the heap
+
+                2. Sequences of characters:
+                         each character in string has representive number called index number (starts from 0)
+
+                         "Cydeo"
+                          01234
+
+
+                3.Immutable, once the object is created it can not be modified
+                      String str ="cydeo";
+                      str = str.toUpperCase();  --> it creates a new object that has "CYDEO".
+
+
+
+
+   String Methods:
+        charAt(index): returns the character at the given index, returns
+                  String s = "Python";
+                  s.charAt(3); ==> 'h'2
+
+        length():  returns the total number of characters, returns int
+                  last index: length()-1
+
+        toLowerCase(): returns new String in the lower case version of old String object
+
+        toUpperCase(): returns new String in the upper case version of old String object
+
+        trim():   returns new String without including the white spaces (unsed )
+
+        indexOf(str): returns the index number of first occured charcater. returns int
+
+        lastIndexOf(str): returns the index number of last occured charcater. returns int
+
+        replace(oldValue, newValue): returns new String by replacing all the old values with the given new value.
+
+        replaceFirst(oldValue, newValue): returns new String by replacing the FIRST matching old values
+                                          with the given new value.
+
+        substring(beginningIndex, endingIndex): creates substring starting from given beginning index till the given
+        ending index (ending index is excluded)
+
+                     String str: "Cydeo School";
+                     str.substring(0,4+1) ==> Cydeo
+
+        substring(beginningIndex): creates substring starting from the given beginning index till the end of the string
+
+                     String str="Cydeo School";
+                            str.substring(6) ==> School
+
+        repeat(count): repeats the string for given number of times. returns string
+
+        equals(): it checks if two string have same text, returns boolean, this method cannot ignore the case sensivity
+                  if you want to compare text use equals(); method
+           you use "==" it is comparing if they are same object or not

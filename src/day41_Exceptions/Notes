@@ -1,0 +1,46 @@
+
+    Final keyword: unchangeable
+        Variables : can not be reassigned
+            - The value of that variable becomes unchangeable
+            - When you instance or static variable that they are final usually instance and static variable
+            have default value, there is no default value for Final
+            - For any final value there is no default value, you have to assign some thing.
+            - You can assign it only ONE time, and you need to make sure that it is initialized before you use it.
+            - When you have final instance variable you can initialize it within the constructor
+            - Once you set the final value you can never set it again
+            - When you have final static variable you can assign it directly or you can initialize within the static block
+            - so whichever a variable final, it can not be reassigned
+
+        Methods : can not be overridden
+            - Final means unchangeable, when the method is final it indicates that specific implementation
+            of the method is unchangeable. (overriding it is about giving different implementation)
+            - any method can be overloaded
+
+        Classes : can not be inherited (can not be parent)
+            - can not be super/sub class
+
+
+    There are 2 category of Exceptions
+
+        1.Unchecked 2.Checked
+
+    - if it is occur during compile time it is Checked exceptions
+    - if it is occur during run time it is Unchecked exceptions
+
+    - Checked it needs to be handle immediately, otherwise you will be not able to compile your code
+    - Unchecked it is only check when you run the code, so you are able to run
+    - If you have exception, without handling it is going to crash your program
+
+    To handle the exceptions we have: TRY-CATCH BLOCK
+    - you declare both of them
+    - exception code go to the try block
+    - in the catch block you need to give exception type
+    - Runtime exception is the parent of all the exceptions
+    - You can multiple catch block;
+        - There is only one rule: parent exception type can not be placed before the child exception type
+    - Finally Block: it is optional, you need to give it at the end of catch blocks
+        - It is always gets executed
+        - The only way to stop it by giving explicitly System.exit(0) method.
+
+    Final vs Finally vs Finalize
+

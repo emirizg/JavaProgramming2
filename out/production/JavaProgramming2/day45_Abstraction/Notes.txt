@@ -1,0 +1,147 @@
+
+* Abstract class vs Regular class(concrete class)
+
+Abstraction is focusing on essential not with details
+
+  ABSTRACTION
+    - Abstraction is about hiding the implementation details of the method
+    - Only showing the functionality to the user
+    - in order to hide the implementation details we need to make our method abstract by using the abstract keyword
+    - There are only 2 ways to create abstract method
+        1. Abstract class
+        2. Interface
+    - So method without the body, without the implementation can be created only in an abstract class or in an interface
+
+    WHAT IS THE MAIN GOAL OF ABSTRACT CLASS?
+    - The main goal is to provide variables and methods to the sub-classes
+    - The abstract class is meant to be a parent(super), We need to inherit it
+    - To create an abstract class we need to use abstract keyword
+    - Once you apply the abstract keyword then that class can not be instantiated(creating object)
+    - Parent class it should contain common features only. Any variable or any method will be inherited to sub classes
+    - Abstract can not be declared as final
+    - Abstract method it is meant to be overridden
+        - What is Method❓
+         --> a function that can perform a task for us
+         - if function if method does not have implementation that means it is useless, it can not perform any task
+         - every single function they must perform a task
+         - in order to perform a task you need to provide the details/implementations
+
+    ❗❗REMEMBER❗️❗Abstract class it should ONLY contain the common features.
+    ❗- If any action is not for all sub classes do not ever add it in abstract class
+    - For that you will need interface
+
+    ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+  INTERFACE
+      - known as the blueprint of a class
+      - Specifies the behaviour that a class should implement
+      - providing the additional methods that sub class or any other class needs
+      - Interface can also provide to other classes
+      - It does not depend on the abstract class
+      - as long as methods are need any class can implement an interface, not only sub classes within the same category
+      - we will worry about details in the sub-classes, not in the abstract class or in the interface
+
+  ❗PAY ATTENTION❗️- Interface
+    - it's not a class
+    - Class is where the object originally came from
+    - You can not create object from the interface NEVER
+    - In the interfaces you can NOT have instances, constructor
+    - any variable you declared in the interfaces they are STATIC & FINAL by default
+    - There will be only one copy for them
+    - Interface can not have instance method or constructor
+    - Interface is designed for %100 abstraction, so you can have abstract method
+    - in the interface you do not need to abstract keyword to create abstract method
+    - as long as you create a method by default it will become an abstract method
+    - Can abstraction be exist without inheritance? --> never
+    - in the interface since it is for %100 abstraction PUBLIC is the only access modifier that you can give to any
+    variable or method that you created in the interface. it is given by default
+    - you can not have blocks in the interface (static block etc.)
+    - implements keyword is used to inherit interface
+    - regular class can never have method without body
+    - interface allows multiple inheritance
+
+    - instance features you can use with object, so you can not have them in the interface
+    - default method can only be created within the interface
+    - Constructor are used for creating object, you can not create objects from interface
+    That is the reason constructor you can not have it in the interface
+    - Static block is meant to execute when the class is loaded, static block is first the run in a class
+    static block is just for class, that's why you can not have it in the interface
+    - Instance method, to use the instance method you need to have an object and interface cannot have an object at all
+    it's not a class, if it's not a class it means no object, no object means no instances, so you can not have it in the
+    interface
+    - in the interface you can not achieve encapsulation, it's impossible
+
+    DEFAULT METHOD IN INTERFACE
+        - After java 8 it was introduced
+        - Before there was only abstract method in the interface
+        - to give a method with body with implementation default method was introduced
+        - To create default method we use default keyword
+        - default method it allows you to create method with body in the interface
+
+        - in the interface we can create static, default and abstract method
+
+    instantiated --> creating object
+
+
+    ❗❗INTERVIEW QUESTIONS INTERFACE❗❗
+        ❗❗What is interface?❗❗
+            ▻ it's blueprint of class
+            ▻ specifies what the class must have
+            ▻ can not be instantiated
+            ▻ can not be final
+        ❗❗️What interface can have?❗❗
+            ▻ Variables: final & static variables ONLY
+            ▻ Methods: abstract method, static method, default method(it will be treated as instance method in the sub-class)
+        ❗❗What interface can not have?❗❗
+            ▻ instance variables, instance method, constructor, blocks -->Because they are class features
+            ▻ Private, default, protected access modifier
+        ❗❗Why we need interface?❗❗
+            ▻ one class can extend one class ONLY
+            ▻ one class can implement multiple interfaces
+
+
+
+  Extends VS Implements: --> both are used for inheritance
+
+        extends:
+            ▻ class extends class
+            ▻ interface extends interface(s)
+
+        implements:
+            ▻ class implements interface(s)
+
+        extends&implements: between class and interface
+            ▻ extends first then implements
+
+
+            is relation --> when inheritance
+            has relation --> when we create an object
+
+            encapsulation --> it is for data hiding, by using private access modoifer, to use them in the other
+            classes you generate getter and setter methid
+
+            inheritance is for to inherit relationship
+             - we can reuse the features to avoid duplication
+             - you will have less code
+
+             abstraction
+             - you do not worry about body and details
+             - you can override the methods and give their body
+             - there are 2 way to achieve abstraction
+             - you can give examples
+             abstract class it is meant to be inherited, so you can override
+             interface we use it because you can achieve multiple interface
+             - if your class is abstract you can not create object
+
+
+
+
+
+    ️
+
+
+
+
+
+
+
+

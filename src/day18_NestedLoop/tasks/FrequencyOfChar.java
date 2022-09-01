@@ -1,0 +1,52 @@
+package day18_NestedLoop.tasks;
+
+public class FrequencyOfChar {
+
+    public static void main(String[] args) {
+
+        String str="aabcccd";
+        String result="";
+
+        for (int j = 0; j < str.length(); j++) {
+
+            char ch = str.charAt(j); // each character from string
+            int count = 0;
+
+            for (int i = 0; i < str.length(); i++) { //to find the frequency of each character
+
+                char each = str.charAt(i); // each character of str
+                if(ch == each){
+                    count++;
+                }
+            }
+
+            if(result.contains(""+ch)){
+                continue; // Skips the current iteration of the loop and jumps to the next iteration.
+                          // the lines at below won't get execute if the result contains ch
+            }
+
+            result += ch;
+            result += count;
+        }
+
+
+        System.out.println(result);
+
+
+
+
+    }
+
+}
+/*
+4. Write a program that can find the frequency of the characters from a string
+
+			 Ex:
+                        str = "aabcccd";
+
+                        output:
+                                a2b1c3d1
+
+       Hint: if you find out how to find the frequency of one character, then repeat it for all the remaining characters
+
+ */

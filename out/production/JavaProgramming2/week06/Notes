@@ -1,0 +1,24 @@
+
+for loops: repeatable If Statements
+
+for (initialization ; condition ; iteration){
+            statements;
+     }
+
+initialization: starting point
+
+condition:   ending point, it needs to be related to initialization
+
+iteration:   co-related to Condition, must be capable of changing the condition to false
+
+ Java control Statements
+ 1. Selection statements
+      - if ....else
+      - switch ---case
+ 2. Iteration statements
+      - for loop
+      - while
+      - do while
+ 3. Jump Statements
+      - break
+      - continue

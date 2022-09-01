@@ -1,0 +1,19 @@
+
+
+println(); --> after printing the last character appends a new line
+               after the last character it is going to append a new line
+               will be in the new line
+               ln --> at the end it is going to give new line
+print();   --> Does not append new line
+               after printing the last character does not append a new line
+
+System.out.println(); --> is used for regular outputs
+System.err.println(); --> is used for printing error messages (red color)
+
+- in one class you cannot have more than 1 main method
+- in one class you cannot have same name methods
+
+* --> its called 'asterisk'
+" --> its called 'double quote'
+\ --> backward slash
+/ --> forward slash
