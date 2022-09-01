@@ -1,0 +1,54 @@
+
+
+    Reference Type Casting
+        1. Upcasting: casting sub type to the super type
+            - it is done implicitly
+
+            Car car = new BMW();
+
+        2. Down-casting: casting super type to sub type
+            - it is done explicitly
+            - ClassCastException
+
+            Animal animal = new Dog();
+
+            ( (Dog)animal ).bark();
+
+
+    OOP CONCEPTS OVERALL SUMMARY
+        - Object Oriented Programing
+        - Basically it is a designing pattern, it designs the application in organized and in easier, readable
+
+        ADVANTAGES:
+            - improves the reusability (all the methods,variables,objects)
+            - easy to maintain because you will be stored all the common features in a centralized structure
+            so if you need to change any of them, you can go to just one place to change it
+            - less memory usage
+            - less codes you will be avoiding the duplicates
+            - no repetition
+            - Flexible
+
+        4 PRINCIPLES
+            #1- Encapsulation: hiding the data by giving private access modifier
+                    private - getter(read) - setter(set)
+                - once you declare as private you can access just in the object
+                - by making it private we are restricting the access and the modification of the variable
+                - only way to achieve it setter and getter method
+                - if the private data is final, we can only generate getter
+
+            #2- Inheritance: Building "IS A" relationship
+                    parent - child
+                - Child class gets riches
+                - child class: inherits all the variable & methods (that are visible) from the parent class
+                - it can extend only one class
+                - parent class: does not inherit anything from child class
+                providing common features
+
+                - Object class --> is the parent of all the classes
+
+            #3- Abstraction: hiding the implementation
+            #4- Polymorphism: Ability of the objects to take on many-forms
+
+
+
+
