@@ -1,0 +1,33 @@
+
+
+    JDK => JAVA DEVELOPMENT KIT
+  --> JDK is basically a set of tools that are needed for writing the java source code and executing the java source code
+  --> Instead of downloading them seperatly, we just download JDK that contains all the tools that are needed to write java
+  source code and execute the java source code.
+  --> It contains the tools and system libraries and the resources that are needed for java
+  --> it is for java
+
+  JRE => JAVA RUNTIME ENVIRONAMNET
+  --> It's a system library basicly, when you write your java source code, when you write any codes in java you need to use
+  some keywords or classes or something that is something from java library
+  --> This JRE is the one that is providing those resources for you, so you can use it to write your codes
+  --> When you write your java codes there are specific keyword or specific syntax they all come from JRE
+  --> Basicly JRE you can see as a library, the library that contains the resources that you can use
+
+  JAVAC => JAVA COMPILER
+  --> It is going to convert your source code to the byte code(it is has number basicly,those number are actually language
+  that computer can understand, that's a code for the computer) Java compiler does the translation for the computer
+  --> Java compiler is responsible for converting your source code whichever java source code to the byte-code
+  Byte-Code: is the actual code that your computer able to read it, you can not read it, it has some number like 10010101
+
+  JVM => JAVA VIRTUAL MACHINE
+  --> it is one that actually responsible for running your java codes, when you run any java codes
+  you are going to get output eventually, and that output is deliverd by the java virtual machine.
+
+  - The only code that computer understand is byte-code
+  - Once byte-code is ready to run, the responsible for running it and delivering the output to your computer, it is JVM
+  - This how java works    1.Source code --> 2.Java C compiler --> 3.Byte-code --> 4.JVM final output
+
+  IDE => INTEGRATED DEVELOPMENT ENVIRONMENT
+  - (IDE) is a software application that provides comprehensive facilities
+    to computer programmers for software development.
