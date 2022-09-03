@@ -1,16 +1,15 @@
-package day46_Polymorphism;
+package day47_Polymorphism;
 
+import day37_Inheritance.day43_Abstraction.employeeTask.Tester;
 import day38_Inheritance.carTask.BMW;
 import day38_Inheritance.carTask.Car;
 import day38_Inheritance.carTask.Tesla;
 import day38_Inheritance.carTask.Toyota;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class CarTask {
+public class PolymorphismPractice {
 
     public static void main(String[] args) {
+
         Car[] cars = {
                 new Toyota("Highlander", 2010, 25000, "White", 255000),
                 new BMW("X5", 2014, 32000, "Red", 12000),
@@ -29,75 +28,51 @@ public class CarTask {
                 new Tesla("Model X", 2014, 48000, "White", 236000),
         };
 
-        ArrayList<Car> carArrayList = new ArrayList<>(Arrays.asList(cars));
+        for (Car eachCar : cars) {
 
-        /*
-         1.2 Write a program that can display all the cars that are eligible for recall
-	        					Cars that are eligible for recall:
-	        							Toyota: from year 2010 to 2011
-	        							BMW: from year 1929 to 2022
-	        							Tesla: from year 2015-2016
-         */
+            if (eachCar instanceof Toyota){
 
-        for (Car each : carArrayList) {
-
-            if (each instanceof Toyota){
-
-                if (each.year == 2010 || each.year == 2011){
-                    System.out.println(each + " is eligible for recall");
+                if (eachCar.year >= 2010 && eachCar.year<=2011){
+                    System.out.println(eachCar);
                 }
 
-            } else if (each instanceof BMW) {
+            }
 
-                if (each.year >= 1929 && each.year <=2022){
-                    System.out.println(each + " is eligible for recall");
-                }
+            if (eachCar instanceof BMW){
 
-            } else if (each instanceof Tesla) {
+                System.out.println(eachCar);
 
-                if (each.year == 2015 || each.year == 2016){
-                    System.out.println(each + " is eligible for recall");
+            }
+
+            if (eachCar instanceof Tesla){
+
+                if (eachCar.year >= 2015 && eachCar.year<=2016){
+                    System.out.println(eachCar);
                 }
 
             }
 
         }
 
-        //Write a program that can display the car that has the highest mileage
+        System.out.println("----------------------------------------------------");
 
-        int highest = carArrayList.get(0).miles;
-        String a = "";
+        Car carWithHighestMileage = cars[0],
+                carWithLowestMileage = cars[0];
 
+        for (Car eachCar : cars) {
 
-        for (Car each : carArrayList) {
+            if (eachCar.miles>carWithHighestMileage.miles){
+                carWithHighestMileage =eachCar;
+            }
 
-            if (each.miles > highest){
-                highest = each.miles;
-                a = each.toString();
+            if (eachCar.miles<carWithHighestMileage.miles){
+                carWithLowestMileage =eachCar;
             }
 
         }
 
-        System.out.println("highest = " + highest);
-        System.out.println(a);
-
-        //1.3 Write a program that can display the car that has the lowest mileage
-        int lowest = carArrayList.get(0).miles;
-        a = "";
-
-        for (Car each : carArrayList) {
-
-            if (each.miles < lowest){
-                lowest = each.miles;
-                a = each.toString();
-            }
-
-        }
-
-        System.out.println("lowest = " + lowest);
-        System.out.println(a);
-
-
+        System.out.println("carWithHighestMileage = " + carWithHighestMileage);
+        System.out.println("carWithLowestMileage = " + carWithLowestMileage);
 
     }
 

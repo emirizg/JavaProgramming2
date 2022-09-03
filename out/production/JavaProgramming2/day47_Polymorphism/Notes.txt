@@ -1,16 +1,14 @@
 
     Polymorphism:
-    - Many forms
-    - "IS A" relationship is a MUST, you need inheritance
-    - If there is no "IS A" so it means there is no polymorphism
-    - Reference type is parent class/interface, and object types is child class
-    - ONLY the reference type you can access, The reference type decides what can be accessed/called
+        - Many forms
+        - "IS A" relationship is a MUST, you need inheritance
+        - If there is no "IS A" so it means there is no polymorphism
+        - Reference type is parent class/interface, and object types is child class
+        - ONLY the reference type you can access, The reference type decides what can be accessed/called
 
     - Animal animal1 = new Dog();
       Reference type = Object type
-      Referencing to
-
-    - Object type decides which
+      Referencing to ---> Object
 
     INSTANCEOF KEYWORD:
         - It is used to check if a reference name is referencing to the specific object.
@@ -42,21 +40,27 @@
             - otherwise you can have ClassCastException
 
             UPCASTING (similar implicit primitive casting)
-            - it is done implicitly, it does not require to use cast operator
-            - it is done implicitly by the compiler
-            - child to parent ---- sub to super
-            - Object type must be the child of Reference Type
+                - it is done implicitly, it does not require to use cast operator
+                - it is done implicitly by the compiler
+                - child to parent ---- sub to super
+                - Object type must be the child of Reference Type
 
             DOWN-CASTING
-            - Explicit action is a MUST
-            - Casting the larger reference type to the smaller reference type
-            -
+                - Explicit action is a MUST
+                - Casting the larger reference type to the smaller reference type
 
 
 
        - Main goal of Interface is providing additional methods that the class needs to implement
        - The whole reason we declare a variable is to reuse it, if you are not going to reuse it again
        there is no point to having that variable
+
+
+       FOR THE POLYMORPHISM YOU NEED TO KNOW
+           - when does it occurs?
+           - what are the rules?
+           - what is instanceof keyword?
+           - down-casting - upcasting
 
 
 

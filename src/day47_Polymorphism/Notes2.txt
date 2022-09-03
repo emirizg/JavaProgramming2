@@ -43,11 +43,74 @@
                 - it can extend only one class
                 - parent class: does not inherit anything from child class
                 providing common features
+                - if a class is final you can not inherit it, it can not be a parent
 
                 - Object class --> is the parent of all the classes
+                - A class can be parent and child
 
-            #3- Abstraction: hiding the implementation
+                METHOD OVERRIDING:
+                    - If the method needs multiple different implementation in the other classes then you can override
+
+            #3- Abstraction: hiding the implementation details
+                - abstract method: in order to hide implementation details we need an abstract method
+                - abstract method does not have a body
+                - if sub classes need different implementations parent class does not need to worry about the implementations
+                - every single method in Java they must perform a task
+                - When they are inherited to the child class, child class has to override the abstract methods
+                - Abstract method is meant to be overridden
+
+              - There are 2 ways to achieve abstraction
+                #1 Abstract class
+                    - It is meant to be a parent
+                    - class is not concrete ==> No objects, you can not create objects
+                    - it should contain common features for all the sub class
+                    - for the abstract method you can not use PRIVATE access modifier
+                    - class can extend one abstract class only
+
+               #2 Interface
+                    - If they do need some features we can create interfaces
+                    - it's not a class
+                    - it is used for providing additional methods that classes need
+                    - with the interface multiple inheritance its allowed
+                    - %100 achieve abstraction
+                    - PUBLIC access modifier is a MUST, it is the only access modifier
+                    - interface can not have instances(variables/methods), constructor, blocks
+                    - interface can have;
+                        variable: static & final by default
+                        methods: abstract method, static method, default method
+                            default method --> it is going to be instance method in the sub classes
+                            it will be treated as instance method in the sub-class
+
+                    WebDriver
+                    WebElement
+                    TakeScreenShot
+                    JavaScriptExecuter
+                    List
+                    Set
+                    ...
+
             #4- Polymorphism: Ability of the objects to take on many-forms
+
+                - Reference type is parent class
+                - Object type is child class
+                - Only method/variables of Reference type you can call
+                - always gets executed overridden version of the methods
+
+
+
+            Method Overriding vs Method Overloading
+                - Overloading it can happen in the same class
+                - Overriding it must happen in the sub-class
+                - For the overriding inheritance is a MUST
+                - Method overriding means having one method with multiple implementations
+                - Overloading between multiple methods
+                - Any method that you have you can always overload it
+                - overloading means creating different methods with the same name
+                - parameter MUST be different in the overloading
+                - When you override a method the access modifier has to be same or more visible
+                - Only the instance method can be overridden (except final & private & static)
+                - return type in the overriding must be the same, in the overloading does not matter
+
 
 
 
