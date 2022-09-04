@@ -1,0 +1,70 @@
+
+
+    Data Structures: work with data
+        Array
+        Collection
+        - it only non primitives type
+        Map
+
+    Array:
+    - Size is fixed
+    - support both primitives & non-primitives
+
+    Collection:
+    - Size is dynamic
+    - It supports non-primitives ONLY
+
+    List(interface): accepts duplicates, has index numbers
+        ArrayList(class): internally uses array
+            - accessing/retrieving the element is faster( get() )
+
+        LinkedList(class): internally uses doubly linked list
+            - adding/removing it is faster ( add() / remove() )
+
+        Vector(class): internally uses array
+            - is Synchronized == Thread-safe
+
+        Stack(class):
+            - it is a child of Vector
+            -
+
+
+    Set(interface)
+
+
+    Queue(interface)
+
+
+    Synchronized: one thread are being executed one thread at the time in multi-threading environment
+        advantage: thread-safe
+        disadvantage: it is slower
+
+    Process: execution instance of a program
+        - every single process in order to operate they need at least one thread
+
+    Thread:
+        - Process creates the thread
+        - It is a sequence of execution within process
+
+    Multi-threading:
+        - two or more threads being executed within the process
+
+    Multi-tasking:
+        - two or more process are running
+
+
+    Concurrently execution vs Parellely execution
+        - Concurrently: --> 1000 * 5 ===> 5000 seconds ===> 10000 threads
+            chrome browser (process)
+
+        - Paralelly: --> 200 * 5 ===> 1000 seconds
+            chrome browser1 (process) ===> 2000 threads
+            chrome browser2 (process) ===> 2000 threads
+            chrome browser3 (process) ===> 2000 threads
+            chrome browser4 (process) ===> 2000 threads
+            chrome browser5 (process) ===> 2000 threads
+
+
+
+
+
