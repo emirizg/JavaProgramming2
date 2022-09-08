@@ -1,0 +1,77 @@
+
+
+    Collection(interface):
+    - Collection interface is considered as root interface of Collection framework
+    - Collection interface provides some useful methods to the child interface(list,set,queue)
+    - All the collection does not have index number, ONLY list has
+    - Collection(interface) it is extended by List, Set and Queue.
+    - We should use Collections because it can increase or decrease the size
+    - We should use Collections because it is a Standard data structure and there are ready methods to use
+    - for example for the array we don't have ready methods as much as the collection does
+    - The disadvantage of the Collection is it only supports non-primitive data types
+    - but if you want to store some primitives values, we wrap it by using Wrapper classes
+
+    List:
+    - It allows duplicates
+    - It has index numbers
+    - Insertion order preserved
+    - Every single data structure that has insertion order preserved they all have index numbers
+    - Any class that implements List they all share same features of List interface
+    - Each class has their own speciality (ArrayList, LinkedList, Vector, Stack)
+    - in the future you always be using the ArrayList
+    - ArrayList is most one.
+    - if searching/accessing the element your priority, you should go with ArrayList
+    - if inserting/deleting the element your priority, you should go with LinkedList
+    - Vector class it uses synchronized keyword, methods of the Vector class use synchronized keyword
+    - synchronized means Thread are created by process they access to the resources one at the time
+    - Process&Thread --> Thread cannot be exist without the process
+        --> Process is what creates the thread
+        --> Thread is sub-sequence of the Process basically
+        --> Every single process they need at least one thread.
+        --> Process is an instance of the execution of the program.
+        --> For process to be executed any activity is done within the process by creating threads
+        --> Multi-threading means if more than one thread being created within the process
+        --> every single process has Resource, if it is not synchronized all the threads that are created they
+        access the resource of the process at the same time
+        --> If it is synchronized they will access one at the time
+    - Vector is synchronized version of the ArrayList
+    - Vector is similar to the ArrayList, it implicitly uses the array, but methods of the Vector it has synchronized keyword
+    - Which means whenever Vector being use within the multi-thread environment, if multiple threads are being executed,
+    those threads will get executed ONE at the time, rest of threads will be waiting.
+    - If the synchronization is the main priority, you should go with either Vector or Stack
+    - Methods of the vector will be inherited as it is to the Stack
+    - Stack is also synchronized
+    - what makes stack different than Vector?
+        --> the difference is Stack it has special order
+        --> whenever you need to take out the last inserted objects one by one during the iteration Stack could be
+        the best choice, beacause it does have Last-in, first out order
+        --> The Pop method is only unique for the Stack, every time when the Pop method called, whichever was the last
+        inserted object it will be return, it will be out of the stack
+
+
+    Set:
+    - It is child interface of the Collection.
+    - What makes the Set different than the other child interfaces of the Collection?
+        --> The Set it does not allowed the duplicates
+        --> you can never store the duplicated object into the set
+        --> every time when you store the duplicate objects previous duplicated ones will be removed and it will only store
+        the last one.
+    - Insertion order not preserved, so it can be random as well
+    - Set does not have index numbers
+    - When the set is the reference type you can create object from HashSet, LinkedHashSet and TreeSet
+    - Which one to use it depends on the scenario
+    - The methods that has Set has will be shared by the child interface and classes
+    HashSet:
+    - It is most used one in the set family
+    - What makes the HashSet class different than the other class of the Set?
+        - HashSet class it does need to maintain any order, therefore the HashSet is the fastest one
+        - HashSet does not have index order
+        - HashSet it could accept any object or anything that can be assigned to the refernce such as Null keyword
+        even it's not an object.
+        - null is the default value of the any non-primitives
+        - Order does not matter
+
+
+
+
+

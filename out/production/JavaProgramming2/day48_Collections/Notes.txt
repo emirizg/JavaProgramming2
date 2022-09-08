@@ -3,7 +3,7 @@
     Data Structures: work with data
         Array
         Collection
-        - it only non primitives type
+        - it only supports non primitives type
         Map
 
     Array:
@@ -26,10 +26,15 @@
 
         Stack(class):
             - it is a child of Vector
-            -
+            - Last in first out order (LIFO)
 
 
-    Set(interface)
+
+    Set(interface): does not accept duplicates, does not have index
+        HashSet (class):  order is random
+        LinkedHashSet (class): keeps the insertion order as it is
+        TreeSet (class): keeps the sorted order
+            - does not accept null
 
 
     Queue(interface)

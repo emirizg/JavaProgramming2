@@ -33,7 +33,7 @@ public class Intro {
         - after JAVA 8 you need a main method to run
         - it's first to get executed
         - it only runs one time
-        - in order to make class runnable i need a main method
+        - in order to make class runnable I need a main method
         - in java first to get executed is static block
 
      */
@@ -43,7 +43,7 @@ public class Intro {
     - You can always use the static block to set any static variables
     - Static accepts statics
     - Main method is static, and main method it only runs within the class, it can not run
-    - Outside the class you can never execute automatically main method in the other class,
+    outside the class you can never execute automatically main method in the other class,
                 to set static variables you should not use main method
     - The block that can executed outside the class by itself is the static block
     - the static method it can automatically can be executed by itself whenever class loaded
