@@ -21,6 +21,7 @@
     - Each class has their own speciality (ArrayList, LinkedList, Vector, Stack)
     - in the future you always be using the ArrayList
     - ArrayList is most one.
+    ArrayList:
     - if searching/accessing the element your priority, you should go with ArrayList
     - if inserting/deleting the element your priority, you should go with LinkedList
     - Vector class it uses synchronized keyword, methods of the Vector class use synchronized keyword
@@ -35,11 +36,13 @@
         --> every single process has Resource, if it is not synchronized all the threads that are created they
         access the resource of the process at the same time
         --> If it is synchronized they will access one at the time
+    Vector:
     - Vector is synchronized version of the ArrayList
     - Vector is similar to the ArrayList, it implicitly uses the array, but methods of the Vector it has synchronized keyword
     - Which means whenever Vector being use within the multi-thread environment, if multiple threads are being executed,
     those threads will get executed ONE at the time, rest of threads will be waiting.
     - If the synchronization is the main priority, you should go with either Vector or Stack
+    Stack:
     - Methods of the vector will be inherited as it is to the Stack
     - Stack is also synchronized
     - what makes stack different than Vector?
@@ -85,6 +88,32 @@
     - if you try to store null keyword it will give you NullPointerException
 
 
+    Queue:
+    - Queue interface is the child interface of the Collection
+    - It has "IS A" relationship with 3 classes (Priority queue, ArrayDeque, LinkedList)
+    - Queue has a child interface which is Deque
+    - Queue interface is totally different than List and Set
+    - Queue it does allow duplicates, you can store the duplicate elements into the Queue
+    - The difference between The Queue and The List that List has indexes and insertion order while Queue has not.
+    - Queue has a unique order in Java, that order known as First-in, First out order (FIFO).
+    - LinkedList has "IS A" relationship with List and Queue. (so LinedList is a List & LinkedList is a Queue)
+    - the poll method every time when you call the method it will return you the first element, and remove it
+    LinkedList:
+    - it is doubly linked
+    - The advantage of doubly linked is insertion/deletion are faster
+    - LinkedList it has index number
+    - LinkedList it does accept null values
+    Priority Queue:
+    - Priority Queue class implements the queue interface
+    - Priority Queue it maintains the random order.(similar to the HashSet)
+    - it keeps the random order
+    - Priority Queue it does not accept null keyword.
+    ArrayDequeue:
+    - ArrayDequeue it implicitly uses array
+    - ArrayDequeue it does maintain the insertion order
+    - ArrayDequeue it does not have index number
+    - it keeps the insertion order.(similar to the Hashset)
+    - It does accept the null values
 
 
 

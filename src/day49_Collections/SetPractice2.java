@@ -67,6 +67,23 @@ public class SetPractice2 {
 
         System.out.println(result);
 
+        System.out.println("--------------------------------------------");
+
+        Set<String > names = new LinkedHashSet<>();
+        names.addAll(Arrays.asList("Ahmet", "Ahmet", "John", "James", "Breanna", "Shay", "Ahmet"));
+
+        System.out.println( names.toArray(new String[0])[2] );
+
+        System.out.println( new ArrayList<>(names).get(2) );
+
+        for (String each : names) {
+            System.out.println(each);
+        }
+
+
+
+
+
     }
 
 }
