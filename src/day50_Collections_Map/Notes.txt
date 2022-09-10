@@ -1,0 +1,42 @@
+
+
+    Collections FrameWork
+    - Collection it consists of multiple interface, each interface is implemented by classes.
+    - Collection is the root interface of the List, Queue and Set interface.
+    - Collection is provider of the some useful methods.
+    - It has dynmaic size
+    - it has ready methods to use/apply
+    - It does not allow the primitive types
+    - Collection can be List, can be Set and can be Queue
+    - the collection is extended by List, Set and Queue.
+    - there are some classes that are implementing those interfaces
+
+    List:
+    - Duplicates are allowed
+    - It has index number, because insertion order preserved order
+    - It keeps insertion order
+    ArrayList:
+    - it is an array based class
+    - it is faster for searching/accessing elements
+    LinkedList:
+    - it is known as doubly linked list, each element has a pointer to to the next element
+    Vector:
+    Stack:
+
+    Set:
+    - Duplicates are not allowed
+    - it does not have index number
+    - insertion order is not preserved
+    - In set only one class does maintain the insertion order
+
+    Queue:
+    - Duplicates are allowed
+    - it does not have index number
+    - insertion order is not preserved
+    - it has First-in first out order
+
+
+
+
+
+

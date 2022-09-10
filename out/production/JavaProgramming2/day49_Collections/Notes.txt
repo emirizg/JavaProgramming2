@@ -97,7 +97,7 @@
     - The difference between The Queue and The List that List has indexes and insertion order while Queue has not.
     - Queue has a unique order in Java, that order known as First-in, First out order (FIFO).
     - LinkedList has "IS A" relationship with List and Queue. (so LinedList is a List & LinkedList is a Queue)
-    - every time when you call the method it will return you the first element
+    - the poll method every time when you call the method it will return you the first element, and remove it
     LinkedList:
     - it is doubly linked
     - The advantage of doubly linked is insertion/deletion are faster
