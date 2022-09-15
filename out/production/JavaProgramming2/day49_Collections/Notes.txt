@@ -1,26 +1,26 @@
 
 
     Collection(interface):
-    - Collection interface is considered as root interface of Collection framework
-    - Collection interface provides some useful methods to the child interface(list,set,queue)
-    - All the collection does not have index number, ONLY list has
-    - Collection(interface) it is extended by List, Set and Queue.
-    - We should use Collections because it can increase or decrease the size
-    - We should use Collections because it is a Standard data structure and there are ready methods to use
-    - for example for the array we don't have ready methods as much as the collection does
-    - The disadvantage of the Collection is it only supports non-primitive data types
-    - but if you want to store some primitives values, we wrap it by using Wrapper classes
-    - All the collections has toArray() method, we can use it to convert Collection to the array(array it is fastest)
+        - Collection interface is considered as root interface of Collection framework
+        - Collection interface provides some useful methods to the child interface(list,set,queue)
+        - All the collection does not have index number, ONLY list has
+        - Collection(interface) it is extended by List, Set and Queue.
+        - We should use Collections because it can increase or decrease the size
+        - We should use Collections because it is a Standard data structure and there are ready methods to use
+        - for example for the array we don't have ready methods as much as the collection does
+        - The disadvantage of the Collection is it only supports non-primitive data types
+        - but if you want to store some primitives values, we wrap it by using Wrapper classes
+        - All the collections has toArray() method, we can use it to convert Collection to the array(array it is fastest)
 
     List:
-    - It allows duplicates
-    - It has index numbers
-    - Insertion order preserved
-    - Every single data structure that has insertion order preserved they all have index numbers
-    - Any class that implements List they all share same features of List interface
-    - Each class has their own speciality (ArrayList, LinkedList, Vector, Stack)
-    - in the future you always be using the ArrayList
-    - ArrayList is most one.
+        - It allows duplicates
+        - It has index numbers
+        - Insertion order preserved
+        - Every single data structure that has insertion order preserved they all have index numbers
+        - Any class that implements List they all share same features of List interface
+        - Each class has their own speciality (ArrayList, LinkedList, Vector, Stack)
+        - in the future you always be using the ArrayList
+        - ArrayList is most used one.
     ArrayList:
     - if searching/accessing the element your priority, you should go with ArrayList
     - if inserting/deleting the element your priority, you should go with LinkedList
@@ -41,13 +41,13 @@
     - Vector is similar to the ArrayList, it implicitly uses the array, but methods of the Vector it has synchronized keyword
     - Which means whenever Vector being use within the multi-thread environment, if multiple threads are being executed,
     those threads will get executed ONE at the time, rest of threads will be waiting.
-    - If the synchronization is the main priority, you should go with either Vector or Stack
+    - If the synchronization is the main priority, you should go with either Vector or Stack.
     Stack:
     - Methods of the vector will be inherited as it is to the Stack
     - Stack is also synchronized
     - what makes stack different than Vector?
         --> the difference is Stack it has special order
-        --> whenever you need to take out the last inserted objects one by one during the iteration Stack could be
+        --> whenever you need to take out the last inserted objects one by one during the iteration, Stack could be
         the best choice, beacause it does have Last-in, first out order
         --> The Pop method is only unique for the Stack, every time when the Pop method called, whichever was the last
         inserted object it will be return, it will be out of the stack

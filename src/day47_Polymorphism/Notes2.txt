@@ -60,14 +60,13 @@
                 - Abstract method is meant to be overridden
 
               - There are 2 ways to achieve abstraction
-                #1 Abstract class
+                1-)Abstract class:
                     - It is meant to be a parent
                     - class is not concrete ==> No objects, you can not create objects
                     - it should contain common features for all the sub class
                     - for the abstract method you can not use PRIVATE access modifier
                     - class can extend one abstract class only
-
-               #2 Interface
+               2-)Interface:
                     - If they do need some features we can create interfaces
                     - it's not a class
                     - it is used for providing additional methods that classes need
