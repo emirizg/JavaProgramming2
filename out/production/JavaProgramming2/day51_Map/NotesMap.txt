@@ -1,0 +1,59 @@
+
+
+
+    Map(interface):
+    - You can increase and you can decrease the size. Size is dynamic.
+    - It does not have "IS A" relationship with the colletion.
+    - It only supports non primitives.
+    - If you have the use primitives in the map, you can use Wrapper classes.
+    - You can store pairs of element(one for key, one for value) (like Properties class in Selenium)
+    - Map is a data structure based on the key+value pairs.
+    - Key has to be unique, value can be the same.
+    - Key will never be duplicated.
+    - It has its own methods. it is providing methods to the child classes.
+    - Key and Value can be any Object
+    - Pairs of collection
+    - It does non-support primitives
+
+    HashMap(class):
+    - It is used more often
+    - it is the fastest class.
+    - It maintains random order.
+    - it does accept the null keyword (both key and value can be null)
+    -
+    LinkedHashMap(class):
+    - It maintains/keeps insertion order.
+    - it does accept the null keyword (both key and value can be null)
+    TreeMap(class):
+    - It maintains sorted order.
+    - It sorts by the key.
+    - it does not allow null keyword. (key can not be null, but value can be null)
+    Hashtable(class):
+    - it maintains random order
+    - it does not accept null keyword (both key and value can NOT be null)
+    - it is Synchronized (so it is slow)
+    -
+
+    Methods of Map:
+    - put(key, value) ---> insert the given key and value to map
+    - get(key) ---> returns the value of the given key
+    - replace(key, newValue) ---> replaces the value of the given key with the given new value
+    - remove(key) --> removes the given key and its value from the map
+    - containsKey(key) --> returns true if the given key is contained in the map, otherwise returns false
+    - containsValue(value): --> returns true if the given value is contained in the map, otherwise returns false
+    - isEmpty() ---> returns true if the size of the map is 0, otherwise returns false
+    - equals(Map) --> returns true if the given Map is equal with the current map, otherwise returns false
+    - clear() --> removes all the pairs from the map
+
+    -------------------------------------------------------------------------------
+    - keySet() --> returns all the keys of the map, returnType is Set
+    - values() --> returns all the values of the map, returnType is Collection
+    - entrySet() --> returns all the entries (Entry: key & value) of map
+
+        getKey()
+        getValue()
+        setKey()
+        setValue()
+
+
+

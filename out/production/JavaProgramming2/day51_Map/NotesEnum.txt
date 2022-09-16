@@ -1,0 +1,9 @@
+
+
+    Enum:
+    - a number of things, small sets of values
+    - it used for containing fixed set of constants
+    - for the constants uppercase is preferred
+    - you have more control over what you assign
+
+
