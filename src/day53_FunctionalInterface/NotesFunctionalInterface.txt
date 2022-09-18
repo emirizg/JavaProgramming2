@@ -40,6 +40,15 @@
     - Stream is unable to change the data structure
     - Stream it's a method, it takes input
 
+    Stream methods:
+    .stream().distinct(); --> removes duplicated elements
+    .stream().skip(n); --> skips the first n elements
+    .stream().limit(n) --> returns until n index
+    .stream().map( p -> {} ) --> applying a function to each element
+    .stream().filter(p -> p % 2 == 0) --> retains elements that match the predicate
+    .stream().allMatch(p -> p%2==0) --> check if all the elements match with given condition
+    .stream().anyMatch(p -> p>20) --> check if any element match with given condition
+    .stream().noneMatch(p-> p%3==0) -->
 
 
 
