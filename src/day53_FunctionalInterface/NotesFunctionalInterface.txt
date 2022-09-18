@@ -30,7 +30,7 @@
 
     T,U,R --> common used generic names
     R --> usually for "return" type
-    - just by looking the abstract method you need to able to write lambda expression
+    - just by looking the abstract method you need to be able to write lambda expression
 
 
     Stream:
