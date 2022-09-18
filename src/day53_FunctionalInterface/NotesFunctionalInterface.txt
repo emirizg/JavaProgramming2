@@ -1,0 +1,45 @@
+
+
+    Regular interface:
+    - the purpose is providing additional methods to the classes
+    - we can create multiple methods
+    - it can have as many as abstract method as you want
+
+    FunctionalInterface:
+    - the purpose is creating a function, not for inheritance
+    - there must be one abstract method in every functional interface
+    - It has only one abstract method, they can not have more than one abstract method
+    - One functional interface it's service one function
+    - You give the implementation of the methods by using lambda expression () -> {}
+    - () this parenthesis will not be needed if there is only one parameter that the abstract method passing
+    but if there is 0 or more than one parameter you need to give the parenthesis
+    - {} this curly braces are needed when there is only one statement
+    - lambda expression can not be exist without functional interfaces
+    - lambda expression is a function you can define whenever you need it
+    - the implementation of the functional interface abstract method is provided by using the lambda expression
+    - lambda expression it does not have a method name, it does not have identifier, it is just an implementation
+    - less memory usage
+
+    Predicate<T> --> it takes one value(can be any type), returns boolean
+    Consumer<T> --> it takes one value(can be any type), void return type
+    ***Function<T,R> --> it takes one value(T)(can be any type), return a value(R)(can be any type)***
+    BiPredicate<T,U> --> it takes two value(T,U)(can be any type), return boolean
+    BiConsumer<T, U> --> it takes two value(T,U)(can be any type), return void
+    BiFunction<T, U, R> --> it takes two value(T,U)(can be any type), return a value(R)(can be any type)
+
+
+    T,U,R --> common used generic names
+    R --> usually for "return" type
+    - just by looking the abstract method you need to able to write lambda expression
+
+
+    Stream:
+    - It is not a data structure
+    - You can not store data
+    - it can contain if the data is coming from a data structure
+    - Stream is unable to change the data structure
+    - Stream it's a method, it takes input
+
+
+
+
