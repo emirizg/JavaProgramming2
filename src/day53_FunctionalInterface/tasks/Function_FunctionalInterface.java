@@ -21,8 +21,8 @@ public class Function_FunctionalInterface {
 
             for (char eachChar : charArray) {
 
-                if (Character.isDigit(eachChar)){
-                    sum+=Integer.parseInt(eachChar+"");
+                if (Character.isDigit(eachChar)) {
+                    sum += Integer.parseInt(eachChar + "");
                 }
 
             }
@@ -39,12 +39,12 @@ public class Function_FunctionalInterface {
         //4.2 Create a function that can convert a Set of Integers
         //to List of Integers
 
-        Function<Set<Integer> , List<Integer>> convertSetToList = integerSet -> {
+        Function<Set<Integer>, List<Integer>> convertSetToList = integerSet -> {
             List<Integer> list = new ArrayList<>(integerSet);
             return list;
         };
 
-        Set<Integer> integerSet = new HashSet<>(Arrays.asList(1,2,3,4,5));
+        Set<Integer> integerSet = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5));
 
         List<Integer> a = convertSetToList.apply(integerSet);
         System.out.println(a);
@@ -59,7 +59,7 @@ public class Function_FunctionalInterface {
             return list;
         };
 
-        Set<String> stringSet = new HashSet<>(Arrays.asList("Apple","Amazon","Facebook","Microsoft","Whatsapp","Instagram"));
+        Set<String> stringSet = new HashSet<>(Arrays.asList("Apple", "Amazon", "Facebook", "Microsoft", "Whatsapp", "Instagram"));
 
         List<String> b = convertSetStringToList.apply(stringSet);
         System.out.println(b);
@@ -73,13 +73,13 @@ public class Function_FunctionalInterface {
 
             int[] reversed = new int[intArray.length];
 
-            for (int i = intArray.length-1, j=0; i >= 0; i--,j++) {
+            for (int i = intArray.length - 1, j = 0; i >= 0; i--, j++) {
                 reversed[j] = intArray[i];
             }
             return reversed;
         };
 
-        int[] w = {1,2,3,4,5,6,7,8,9,10};
+        int[] w = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         System.out.println(Arrays.toString(reversedVersionOfIntArray.apply(w)));
 
@@ -92,13 +92,13 @@ public class Function_FunctionalInterface {
 
             String[] reversed = new String[stringArray.length];
 
-            for (int i = stringArray.length-1, j=0; i >= 0; i--,j++) {
+            for (int i = stringArray.length - 1, j = 0; i >= 0; i--, j++) {
                 reversed[j] = stringArray[i];
             }
             return reversed;
         };
 
-        String[] strArray = {"Apple","Amazon","Facebook","Microsoft","Whatsapp","Instagram"};
+        String[] strArray = {"Apple", "Amazon", "Facebook", "Microsoft", "Whatsapp", "Instagram"};
         System.out.println(Arrays.toString(reversedVersionOfStringArray.apply(strArray)));
 
         System.out.println("------------------------------------------------");
@@ -108,15 +108,62 @@ public class Function_FunctionalInterface {
         //Note: you can use the reverse function
         //you created at 4.4
 
+        Function<int[], int[]> sortedIntArray = arr -> {
 
-        
+            //int[] sortedArr = new int[arr.length];
+
+            for (int i = 0; i < arr.length; i++) {
+
+                for (int j = i + 1; j < arr.length; j++) {
+
+                    if (arr[i]>arr[j]) {
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
 
 
+                }
+
+            }
+
+            return arr;
+        };
+
+        int[] abcd = {2,3,1,16,9,3,533,317,5,625,3,132,6,3,23};
+        System.out.println(Arrays.toString(sortedIntArray.apply(abcd)));
 
         System.out.println("------------------------------------------------");
 
+        //4.7 Create a function that can return the sorted
+        //(decending) version of a String array
+        //Note: you can use the reverse function
+        //you created at 4.5
+
+        Function<String[], String[] > reverseStringArray = arr -> {
+
+            for (int i = 0; i < arr.length; i++) {
+
+                for (int j = i + 1; j < arr.length; j++) {
+
+                    if (arr[i].length()>arr[j].length()) {
+                        String temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
 
 
+                }
+
+            }
+
+            return arr;
+
+        };
+
+        String[] countries = {"Zimbabwe", "South-Africa", "India", "America", "Yugoslavia", " Australia", "Denmark", "France", "Netherlands", "Italy", "Germany"};
+
+        System.out.println(Arrays.toString(reverseStringArray.apply(countries)));
     }
 
 }
