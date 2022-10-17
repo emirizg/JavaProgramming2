@@ -57,6 +57,30 @@ public class ListFunctionPractice {
         //1.3 Create a function that can return the longest String
         //from a List of String
 
+        ListFunction<String, String> findLongestString = (listOfString) -> {
+
+            String longest = "";
+            int lngSize = listOfString.get(0).length();
+
+            for (String each : listOfString){
+
+                if (each.length() > lngSize ){
+
+                    longest = each;
+                    lngSize = each.length();
+
+                }
+
+            }
+
+            return longest;
+
+        };
+
+        List<String> stringList = new ArrayList<>(Arrays.asList("Apple","Amazon","Facebook","Microsoft","Whatsapp","Instagram"));
+
+        System.out.println(findLongestString.apply(stringList));
+
 
 
     }
