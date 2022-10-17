@@ -8,7 +8,7 @@
         - We should use Collections because it can increase or decrease the size
         - We should use Collections because it is a Standard data structure and there are ready methods to use
         - for example for the array we don't have ready methods as much as the collection does
-        - The disadvantage of the Collection is it only supports non-primitive data types
+        - The disadvantage of the Collection is, it only supports non-primitive data types
         - but if you want to store some primitives values, we wrap it by using Wrapper classes
         - All the collections has toArray() method, we can use it to convert Collection to the array(array it is fastest)
 
@@ -68,7 +68,7 @@
     HashSet:
     - It is most used one in the set family
     - What makes the HashSet class different than the other class of the Set?
-        --> HashSet class it does need to maintain any order, therefore the HashSet is the fastest one
+        --> HashSet class it does not need to maintain any order, therefore the HashSet is the fastest one
         --> HashSet does not have index order
         --> HashSet it could accept any object or anything that can be assigned to the refernce such as Null keyword
         even it's not an object.
@@ -96,7 +96,7 @@
     - Queue it does allow duplicates, you can store the duplicate elements into the Queue
     - The difference between The Queue and The List that List has indexes and insertion order while Queue has not.
     - Queue has a unique order in Java, that order known as First-in, First out order (FIFO).
-    - LinkedList has "IS A" relationship with List and Queue. (so LinedList is a List & LinkedList is a Queue)
+    - LinkedList has "IS A" relationship with List and Queue. (so LinkedList is a List & LinkedList is a Queue)
     - the poll method every time when you call the method it will return you the first element, and remove it
     LinkedList:
     - it is doubly linked
