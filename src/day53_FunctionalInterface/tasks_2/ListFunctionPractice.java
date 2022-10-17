@@ -52,6 +52,11 @@ public class ListFunctionPractice {
 
         System.out.println( findMinNumber.apply(integerList) );
 
+        System.out.println("------------------------------------------------");
+
+        //1.3 Create a function that can return the longest String
+        //from a List of String
+
 
 
     }
