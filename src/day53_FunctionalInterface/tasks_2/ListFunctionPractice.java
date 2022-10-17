@@ -81,7 +81,10 @@ public class ListFunctionPractice {
 
         System.out.println(findLongestString.apply(stringList));
 
+        System.out.println("------------------------------------------------");
 
+        //1.4 Create a function that can return the shortest String
+        //from a List of String
 
     }
 
